@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Определитель настроения 3000</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <h1>Сайт для подбора фильмов по настроению</h1>
+        <form method="post">
+            <label for="message">Напиши как ты себя сейчас чувствуешь</label>
+            <br>
+            <textarea id="message" name="message" 
+            placeholder="Например что тебе грустно или весело" required>{{ user_text }}</textarea>
+            <br>
+            <button type="submit">Отправить</button>            
+        </form>
+        {% if recommendation %}
+        <div class="result">
+            <p>{{ recommendation }}</p>
+        </div>
+        {% endif %}
+    </body>
+</html>

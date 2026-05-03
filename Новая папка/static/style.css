@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: #f7f7f8;
+    color: #222;
+    padding: 30px;
+}
+
+textarea {
+    width: 60%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #ff006a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #8d003b;
+}
+
+.result {
+    margin-top: 20px;
+    background: white;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
